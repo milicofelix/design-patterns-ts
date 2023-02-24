@@ -2,6 +2,14 @@ import TypeVehicle from "./TypeVehicle";
 import Vehicle from "./SOLID/O/vehicles/Vehicle";
 import Motocycle from "./SOLID/O/vehicles/Motocycle";
 import Car from "./SOLID/O/vehicles/Car";
+import Client from "./SOLID/S/utils/Client";
+import Notify from "./SOLID/S/utils/Notify";
+
+
+const client = new Client();
+const notify = new Notify(client);
+
+console.log(client, notify);
 
 const typeVehicle = TypeVehicle.CAR;
 let vehicle;
